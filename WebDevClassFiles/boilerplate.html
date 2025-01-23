@@ -3,18 +3,122 @@
   <head>
     <!-- this specifies the character set encoding.
      without this tag our fonts might not load properly -->
-    <meta charset="utf-8" />
+   ~fonts <meta charset="utf-8" />
     <!-- the viewport tag sets the initial scale and ensures
      proper responsive behavior -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   ~responsive behavior <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- The title tag shows up in the browser tab and as the big blue link in search results -->
-    <title>HTML Boilerplate</title>
+    ~text and the tag when you go on a browser <title>HTML 101</title>
+    <style>
+      /* classes always begin with . */
+      .nyu_text {
+        color:blueviolet
+
+      }
+    </style>
   </head>
   <body>
     <!-- everything inside the body tag shows up to the user unless
      modified to not be visible with css -->
 
     <!-- ONLY 1 H1 per page -->
-    <h1>Hello World!</h1>
+    <h1 id="top">Heading 1 is the most important text on the page. Only one per page!!</h1>
+    <h2>As the heading numbers get bigger, the text gets smaller. All still boldish
+       weight, and they are all more important than any other text tags.</h2>
+       <h3>Heading 3</h3>
+       <h4>Heading 4</h4>
+       <h5>Heading 5</h5>
+       <h6>Heading 6</h6>
+       <!-- horizontal rule aka page diveider -->
+        <hr/>
+        <!-- Most text will likely be p tags  -->
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacus felis, volutpat et porta ut, sollicitudin eu magna.
+           Vestibulum vehicula lacus ac felis congue, a dignissim lectus cursus. Etiam sodales metus pretium consequat lacinia.
+            Vestibulum sit amet tellus tempor, aliquam metus non, posuere purus. Suspendisse vel ipsum erat. 
+            Pellentesque vel urna nec diam blandit euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+             Morbi condimentum ipsum purus, non elementum augue condimentum a. Donec faucibus malesuada fermentum.
+              Proin lacinia ac metus id iaculis. Curabitur diam erat, luctus nec gravida at, malesuada vitae sapien.
+               Nullam malesuada vitae quam vitae bibendum. Etiam auctor arcu viverra est dictum, posuere accumsan velit sodales. 
+               Donec ac ligula velit.<p>
+
+          <p>Pellentesque tristique eros sed augue venenatis tempus. Vivamus bibendum nisi vel laoreet faucibus. 
+          Aliquam efficitur et turpis a luctus. Curabitur mollis neque at porta volutpat. Nunc sed cursus arcu.
+           Pellentesque sapien magna, condimentum id tincidunt at, ornare maximus neque.
+            Quisque eget lorem finibus nulla consequat scelerisque. Nulla a purus lacus.
+             Vestibulum in elit aliquet, vestibulum magna eget, interdum nisl.
+              Aenean orci purus, commodo gravida dui ac, hendrerit vestibulum quam.
+               Vivamus finibus, quam eu scelerisque tristique, tortor tortor hendrerit quam, a rhoncus odio risus sed justo.</p>
+
+          <p class="nyu_text">
+          <em>Donec sit amet interdum tortor, id tempus arcu.</em> Vestibulum accumsan vehicula scelerisque. 
+          <strong>In hac habitasse platea dictumst.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Duis in odio eu massa lacinia lacinia. Nulla justo arcu, ultricies eu dignissim et, placerat eu erat.
+           In et velit at ante fringilla hendrerit.<span style="color:red"> Aenean diam ex, aliquam non vestibulum at, maximus id metus.</span> 
+            Vivamus in turpis ut sem gravida efficitur. Curabitur quis massa vitae ipsum luctus accumsan sit amet nec eros.
+             Aliquam erat volutpat. Curabitur eget arcu a diam auctor maximus.
+            </p>
+
+            <h2>Buttermilk Pancakes</h2>
+          
+            <p>A description of pancakes. No one wants to read this, but everyone seems
+               to write a bunch here on recipe sites.
+              </p>
+              <!-- This is an image loaded from an external URL -->
+              <img src="https://sugarspunrun.com/wp-content/uploads/2019/03/Best-buttermilk-pancake-recipe-14-of-16.jpg"
+              alt="The fluffiest buttermilk pancakes you ever did see!"
+              />
+              <!-- Imaged loaded from same folder (right next to) as html file -->
+               <img src="pancake2.webp" alt="pancake right next to index file.
+               this isnt working like she wanted it to. i think i need to put it in 'boilerplate.html' when im save as it to my computer"/>
+               <!-- image loaded from a folder within the project (i mean the website) -->
+                <img src="img/pancake.jpg" alt="pancake in the img folder next to index file">
+                <ul>
+                  <li>Flour</li>
+                  <li>Sugar</li>
+                  <li>Eggs</li>
+                  <li>Butter</li>
+                </ul>
+
+
+                <ol>
+                  <li>Mix it up</li>
+                  <li>Heat it up</li>
+                  <li>Pour some batter</li>
+                  <li>Flip it</li>
+                  <li>Eat it</li>
+                </ol>
+
+                <hr>
+                <ul>
+                  <li>Flour</li>
+                  <li>Sugar</li>
+                  <li>Eggs</li>
+                  <li><ol>
+                    <li>sublist-item 1</li>
+                    <li>sublist-item 2</li>
+                    <li>sublist-item 3</li>
+                  </ol></li>
+                </ul>
+
+
+                <ol>
+                  <li>Mix it up</li>
+                  <li>Heat it up</li>
+                  <li>Pour some batter</li>
+                  <li>Flip it</li>
+                  <li>Eat it</li>
+                </ol>
+
+
+
+
+
+                <!-- anchor tag linking to another element on the same page by ID -->
+                 <a href="#top">Back to top</a>
+
+
+          
   </body>
 </html>
