@@ -11,11 +11,18 @@
     <!-- The title tag shows up in the browser tab and as the big blue link in search results -->
     ~text and the tag when you go on a browser <title>HTML 101</title>
     <style>
-      /* classes always begin with . */
+
+      /* tag selector = any p tag will get styles, unless they have the  */
+      /* classes always begin with .  the style gets applied wherever class ="that style""*/
       .nyu_text {
         color:blueviolet
 
       }
+      /* ID selector always start with #. IDS are unique, you cant reuse it on the same page. */
+      #top{
+        color:cornflowerblue
+      }
+    
     </style>
   </head>
   <body>
@@ -68,6 +75,8 @@
               <!-- This is an image loaded from an external URL -->
               <img src="https://sugarspunrun.com/wp-content/uploads/2019/03/Best-buttermilk-pancake-recipe-14-of-16.jpg"
               alt="The fluffiest buttermilk pancakes you ever did see!"
+              width="100px"
+           
               />
               <!-- Imaged loaded from same folder (right next to) as html file -->
                <img src="pancake2.webp" alt="pancake right next to index file.
