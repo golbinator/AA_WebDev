@@ -1,0 +1,43 @@
+
+/* how you load a google font or any external font in a css file */
+/* We are essentially importing another stylesheet from elsewhere */
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');
+
+.jacquard-12-charted-regular {
+    font-family: "Jacquard 12 Charted", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background-color: black;
+    /* This is how we get a full sized fixed image centered background */
+    background: url('../img/bg.jpg') no-repeat center center;
+    background-size: cover;
+    
+  }
+
+  /* apply the default font style at the body tag
+  so that all children elements inherit this style
+  we can always overwrite when necessary */
+
+  body {
+    font-family: "Jacquard 12 Charted", serif;
+  }
+
+
+  /* GALLERY */
+
+  .container {
+    width: 900px;
+    margin: 100px auto;
+    
+  }
+  
