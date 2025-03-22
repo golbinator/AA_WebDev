@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anyaSite</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            cursor: url(photos+cursor/Green_onion_cursor.png), auto;
+        }
+
+        header {
+            background-color: white;
+            padding: 1px;
+            text-align: left;
+            padding-left: 40px;
+        }
+
+        .about-Me {
+            font-size: 2rem; 
+            text-align: left; 
+            margin-top: 40px; 
+            padding: 20px; 
+            color: black; 
+        }
+
+        .nav-menu {
+            position: relative;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            background: black;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background: white;
+            list-style: none;
+            padding: 10px;
+            padding-left: 50px;
+        }
+
+        .menu.show {
+            display: block;
+        }
+
+        .site-title {
+            margin: 0;
+            text-align: left;
+        }
+
+
+    
+
+
+
+        .container {
+            position: relative;
+            top: 30%;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+
+        .floating-image-1 {
+            position: absolute;
+            top: 10%;
+            right: 77%;
+            width: 400px;
+            height: auto;
+            animation: float 4s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0); 
+            }
+            50% {
+                transform: translateY(-20px); 
+            }
+            100% {
+                transform: translateY(0px); 
+            }
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 50vh;
+        }
+
+        .floating-image-2 {
+            position: absolute;
+            top: 30%;
+            right: 15%;
+            width: 350px;
+            height: auto;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 50vh;
+        }
+
+        .floating-image-3 {
+            position: absolute;
+            top: 60%;
+            right: 47%;
+            width: 300px;
+            height: auto;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        .projects-section {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .project {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+.
+
+
+        footer {
+            background-color: white;
+            text-align: right;
+            padding: 15px;
+            margin-top: 250px;
+            padding-right: 40px;
+        }
+
+        
+
+        
+        
+@media (max-width: 768px) {
+    body {
+        background-color: blue; 
+    }
+
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 1.5rem; 
+        text-align: center;
+    }
+
+    .about-Me {
+        font-size: 1.5rem; 
+        text-align: left; 
+        margin-top: 35px; 
+        padding: 20px; 
+        color: black; 
+    }
+
+    .nav-menu {
+        width: 100%; 
+    }
+
+    .hamburger {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none; 
+        position: static;
+        opacity: 1;
+        padding: 0;
+        background-color: transparent;
+        list-style: none;
+        margin-top: 10px;
+        width: 100%; 
+    }
+
+    .menu.show {
+        display: block; 
+    }
+
+    .menu li {
+        display: inline-block; 
+        margin-right: 20px; 
+    }
+
+    .menu li a {
+        text-decoration: none; 
+        color: black; 
+        font-size: 1rem; 
+    }
+
+    .container {
+        top: 10%;
+        left: 5%;
+        height: 200vh; 
+
+    .floating-image-1 {
+        position: absolute;
+        top: 7%; 
+        left: 3%;
+        width: 40%; 
+        height: auto;
+        animation: float 4s infinite ease-in-out;
+    }
+
+    .floating-image-2 {
+        position: absolute;
+        top: 3%; 
+        right: 10%;
+        width: 40%; 
+        height: auto;
+        animation: float 3s infinite ease-in-out;
+    }
+
+    .floating-image-3 {
+        position: absolute;
+        top: 20%; 
+        right: 15%;
+        width: 40%;
+        height: auto;
+        animation: float 5s infinite ease-in-out;
+    }
+
+    footer {
+
+        text-align: center; 
+        padding: 10px;
+        margin-top: -100px; 
+    }
+
+}
+
+
+
+
+</head>
+<body>
+    <header>
+        <h1 class="site-title">anyaSite</h1>
+        <nav class="nav-menu">
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <img src="photos+cursor/carousel_lalala.JPG" alt="carousel Floating Image" class="floating-image-1">
+        <img src="photos+cursor/moscow_Wall.JPG" alt="wall Floating Image" class="floating-image-2">
+        <img src="photos+cursor/some_other_image.jpg" alt="another Floating Image" class="floating-image-3">
+    </div>
+  
+    <footer>
+        <p>contact me: <a href="#">here</a></p>
+    </footer>
+</body>
+</html>
