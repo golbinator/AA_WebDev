@@ -38,6 +38,20 @@
   .container {
     width: 900px;
     margin: 100px auto;
-    
+    /* when we use inline block to stack elements
+    we have to zero out the font size on the 
+    parent or container element */
+    font-size: 0;
+
+  }
+  .polaroid {
+    width: 260px;
+    margin 20px;
+    display: inline-block;
+    /* Whenever you want to abs position an element inside
+    of another parent element, the parent element needs to be
+    positioned as well */
+    position: relative;
+
   }
   

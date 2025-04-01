@@ -4,6 +4,74 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Positioning</title>
+    <style type="text/css">
+      .abs_br {
+        
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+      }
+
+
+      .rel_tl {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+        position:relative;
+        top: 400px;
+        left: 50%;
+      }
+
+
+          .abs_child {
+          width: 100px;
+          height: 100px;
+          background-color: chartreuse;
+          position: absolute;
+          bottom: 0;
+          left: 300px
+          }
+         
+
+        .rel_parent {
+          width: 400px
+          height: 400px;
+          background-color: green;
+          position: relative;
+        }
+      
+      
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- when we position an element absolute
+     without declaring a postion type for any parent element
+     absolute positioning is based on the browser window
+      -->
+    <div class="abs_br">
+      <!-- absolute bottom right
+       when we position an element relative without declaring a postion type for any parent element
+       the element is positioned relative to where it was going to be anyway -->
+
+
+
+    </div>
+
+    <div class="rel_tl">  </div>
+      <!-- relative top left 
+       When an absoulute positioned child elemnt has a aprent elemnt
+        with a defined position (not static ) the absolute bounds are in relation to that parent-->
+
+    <div></div>
+    <div class="rel_parent">
+
+      <div class="abs_child"></div>
+
+    </div>
+    <div class="fixed_header"</div>
+  
+  </body>
 </html>

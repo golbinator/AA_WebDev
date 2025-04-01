@@ -10,12 +10,53 @@
     <style type="text/CSS">
       /* universal selector */
    * {
-    font-family: 'sans-serif', 'Helvetica', 'Arial';
+    font-family: 'Courier New', 'Helvetica', 'Arial';
    }
+   /* tag selector, apply these styles to all P tags unless overridden by another selector */
+   p{
+    font: size 0.75rem; /* 12px */
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    color: cadetblue;
+   }
+    /* class selectors
+   can apply to any tag, but we need to apply the class attribute */
+   .SillyText {
+    font-weight: 800;
+    color: #006fff;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    text-decoration: overline;
+    text-transform: uppercase;
+   }
+   
+  
+   #mostImportantText{
+    /* applying one side at a time indivudally */
+    margin-top:0;
+    /* 2 values for margin, top/bottom & left/right */
+    margin: 0 2rem; /* 2 rem = 2 x 16 = 32 px */
+    /* 4 values means 4 different for each side,
+     top> right> bottom > left 
+     think about the face of a clock and clockwise
+     */
+     margin: 5px 10px 15px 20 px;
+     /* 4 values = x,y, blurr, color */
+     /* text shadow is really great for readability of 
+     text over image or video */
+     text-shadow:4px 4px 6px red;
+     /* width style color */
+     border: 2px solid rgb(82, 123, 16, 0.5);
+     padding: 1rem 2rem;
+
+   }
+
   </style>
   </head>
   <body>
     <h1>Reasons why Nic Cage is actually a great actor.</h1>
     <p>Nicolas Cage has an oscar. </p>
+    <p>He makes about 8 movies a year.
+      <span class=SillyText;>
+        At least half of them are laughably watchable. </span></p>
+        <h2 id="mostImportantText">He bought a stolen dinosaur egg.</h2>
   </body>
 </html>
