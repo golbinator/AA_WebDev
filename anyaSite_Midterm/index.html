@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +13,16 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             overflow-x: hidden;
             width: 100vw;
-            padding-top: 60px; 
+            padding-top: 60px;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; 
+            min-height: 100vh;
         }
+
         header {
             width: 100%;
             position: fixed;
@@ -33,9 +35,11 @@
             align-items: center;
             padding: 10px 20px;
         }
+
         .nav-menu {
             position: relative;
         }
+
         .hamburger {
             display: flex;
             flex-direction: column;
@@ -43,11 +47,13 @@
             cursor: pointer;
             align-items: flex-end;
         }
+
         .hamburger div {
             width: 30px;
             height: 3px;
             background: black;
         }
+
         .menu {
             display: none;
             position: absolute;
@@ -58,13 +64,16 @@
             list-style: none;
             padding: 10px;
         }
+
         .menu.show {
             display: block;
         }
+
         .menu li {
             padding: 10px;
             text-align: right;
         }
+
         .menu li a {
             text-decoration: none;
             color: black;
@@ -74,21 +83,50 @@
             border-radius: 10px;
             transition: background 0.3s ease;
         }
+
         .menu li a:hover {
             background: white;
         }
+
         .content {
             flex: 1;
         }
+
         footer {
             width: 100%;
             background: white;
             text-align: center;
             padding: 10px;
-            margin-top: auto; 
+            margin-top: auto;
+        }
+
+        #clickOnion {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 80px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #clickOnion:active {
+            transform: scale(0.95);
+        }
+
+        #clickCounter {
+            position: fixed;
+            bottom: 120px;
+            left: 30px;
+            font-size: 1.2rem;
+            background: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-transform: lowercase;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1 class="site-title">anyaSite</h1>
@@ -116,6 +154,9 @@
             <img src="photos+cursor/anyatext.png" alt="text Floating Image" class="floating-image-3">
         </div>
     </div>
+
+    <img id="clickOnion" src="photos+cursor/red_Onion.png" alt="Click Me Onion">
+    <div id="clickCounter">onion clicks: 0</div>
 
     <footer>
         <p>contact me: <a href="contact.html">here</a></p>
