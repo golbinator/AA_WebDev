@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: blue;
+  padding-top: 60px;
+  scroll-behavior: auto;
+  cursor: url(photos+cursor/Green_onion_cursor.png), auto;
+}
+
+.content {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.nav-menu {
+  position: relative;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background: black;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  list-style: none;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px blue;
+  min-width: 160px;
+  text-align: left;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu li {
+  padding: 8px 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: lowercase;
+  display: block;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+.menu li a:hover {
+  background: black;
+  color: white;
+  padding-left: 25px;
+}
+
+#clickCounter {
+  font-size: 0.95rem;
+  background: white;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 20px;
+  min-width: 24px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-Me {
+  font-size: 2.5rem;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0px auto 20px;
+  padding: 0 20px;
+  line-height: 1.2;
+  color: white;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+}
+
+.floating-image-1,
+.floating-image-2,
+.floating-image-3 {
+  position: absolute;
+  height: auto;
+  animation: float 5s infinite ease-in-out;
+}
+
+.floating-image-1 {
+  top: 10%;
+  left: 10%;
+  width: 300px;
+}
+
+.floating-image-2 {
+  top: 30%;
+  right: 15%;
+  width: 350px;
+}
+
+.floating-image-3 {
+  top: 60%;
+  right: 47%;
+  width: 300px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.description {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  line-height: 1.2;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.project {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-container {
+  background: white;
+  padding: 40px 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: black;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  text-transform: lowercase;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 0;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  outline: 2px solid black;
+  background: white;
+  color: black;
+}
+
+.form-status {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  text-transform: lowercase;
+}
+
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-menu {
+    width: 100%;
+    text-align: right;
+  }
+
+  .menu {
+    width: 100%;
+    right: 0;
+    left: auto;
+    top: 100%;
+    padding: 10px 0;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .floating-image-1,
+  .floating-image-2,
+  .floating-image-3 {
+    position: static;
+    width: 80%;
+    margin-bottom: 20px;
+    animation: none;
+  }
+
+  .about-Me,
+  .description {
+    font-size: 1.5rem;
+    padding: 0 15px;
+    text-align: left;
+  }
+
+  section#projects > div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  section#projects img {
+    width: 90% !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  #clickOnion {
+    width: 30px;
+    height: 30px;
+  }
+
+  #clickCounter {
+    font-size: 0.8rem;
+    padding: 2px 6px;
+  }
+}

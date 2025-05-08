@@ -11,7 +11,7 @@ if (onion) {
         onionClicks++;
         counter.textContent = `onion clicks: ${onionClicks}`;
         if (onionClicks === 10) {
-            alert("you've unleashed the onion's power.");
+            alert("onion");
         }
     });
 }
